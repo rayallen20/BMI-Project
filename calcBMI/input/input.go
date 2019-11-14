@@ -27,6 +27,7 @@ func HeightHandle() (height float64, flag bool) {
 	}
 
 	inputHeight = strings.Replace(inputHeight, "\n", "", -1)
+	inputHeight = strings.Replace(inputHeight, "\r", "", -1)
 
 	// 输入exit表示退出
 	if inputHeight == ExitFlag {
@@ -50,6 +51,7 @@ func WeightHandle () (weight float64, flag bool) {
 	}
 
 	inputWeight = strings.Replace(inputWeight, "\n", "", -1)
+	inputWeight = strings.Replace(inputWeight, "\r", "", -1)
 
 	// 输入exit表示退出
 	if inputWeight == ExitFlag {
@@ -77,6 +79,7 @@ func IntensityHandle() (intensity string, flag bool, err error) {
 	}
 
 	inputIntensity = strings.Replace(inputIntensity, "\n", "", -1)
+	inputIntensity = strings.Replace(inputIntensity, "\r", "", -1)
 
 	// 输入exit表示退出
 	if inputIntensity == ExitFlag {
@@ -122,6 +125,7 @@ func IsEatStapleFoodHandle() (isEatStapleFood bool, flag bool, err error) {
 	}
 
 	inputEatStaple = strings.Replace(inputEatStaple, "\n", "", -1)
+	inputEatStaple = strings.Replace(inputEatStaple, "\r", "", -1)
 
 	// 输入exit表示退出
 	if inputEatStaple == ExitFlag {
